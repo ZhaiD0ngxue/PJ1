@@ -1,1 +1,5 @@
 
+s='Hello\n Charlie\n Good\n Morning'
+print(s)
+
+s2=''
