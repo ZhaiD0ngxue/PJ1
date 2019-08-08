@@ -1,7 +1,5 @@
 
-import os
 
-print("hellow")
-print(os.cpu_count())
+print("lets begin.")
 
-web update
+
