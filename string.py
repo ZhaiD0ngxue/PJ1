@@ -4,3 +4,4 @@ print(s)
 
 s2=''
 s3='huilongguanxincunxiqu'
+print(s3)
