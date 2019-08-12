@@ -73,18 +73,3 @@ print(s.split(None,3))
 s3=s.split(None)
 print(":".join(s3))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
