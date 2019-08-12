@@ -100,6 +100,87 @@ for i in l1:
         zdxDict[i]+=1
     else:
         zdxDict[i]=1
-print(zdxDict)
+else:
+    print(zdxDict)
+
 
 ######
+
+count=0
+while count  < 10:
+    print('count is ',count)
+    count+=1
+else:
+    print('dale')
+
+
+
+aRange=range(10)
+aList=(x*x for x in aRange if x%3==0)
+for i in aList:
+    print(i,end='\t')
+
+del aList
+aList=[(x,y,z)for x in range(5) for y in range(4)for z in range(3)]
+print(aList)
+
+srca=[30,12,34,45,6546,43,64,234,64,54]
+srcb=[1,4,5,6,3,2]
+del aList
+aList=[(x,y)for x in srca for y in srcb if x%y==0]
+print(aList)
+
+azip=zip(srca,srcb)
+print(azip,type(azip))
+for i in azip:
+    print(i)
+
+
+books=['booka','bookb','bookc']
+price=[18,35,12]
+
+for book,price in zip(books,price):
+    print('%s de price is %d'%(book,price))
+
+
+del aList
+aList=[x for x in range (10)]
+bList=list(range(10))
+aList.clear()
+aList=[x for x in reversed(bList)]
+
+print(aList)
+print(bList)
+
+
+a='charices'
+b=reversed(a)
+for x in b:
+    print(x)
+
+aList.clear()
+aList=['34','342','436','-324','-4','15','46','654','3']
+print(sorted(aList,reverse=False,key=len))
+for i in sorted(aList):
+    print(i)
+
+for i in range(10):
+    print('i value is ',i)
+    if i ==4:
+        # break
+        continue
+    else:
+        print('go')
+
+
+#return
+def test():
+    for i in range(10):
+        for j in range(5):
+            print(i,j)
+            if j == 3:
+                return
+            print("return后的语句")
+
+
+test()
