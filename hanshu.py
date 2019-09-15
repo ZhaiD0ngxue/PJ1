@@ -18,7 +18,7 @@ print(say_hi())
 print('--'*100)
 print(my_max.__doc__)
 print('--'*100)
-print(help(my_max))
+#print(help(my_max))
 print('--'*100)
 
 
@@ -57,4 +57,9 @@ say('baigujing')
 say(ms='jintiant',name='lalala') 
 
 print('hahaha')
+
+print("dadada10290916 02:04")
+
+
+
 
