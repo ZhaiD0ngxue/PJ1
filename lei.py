@@ -80,4 +80,49 @@ rs.grow().grow().grow().grow()
 print(rs.age)
 
 
+def funA(fn):
+    print('A')
+    fn()
+    return 'funa'
+@funA
+def funB():
+    print('B')
 
+print(funB)
+
+class Address:
+    deteal='guangzhou'
+    postcode='12345'
+    def getinfo(self):
+ #       print(deteal)
+        print(self.deteal)
+        print(self.postcode)
+
+addr=Address()
+print(id(addr.deteal),addr.deteal)
+print(id(Address.deteal),Address.deteal)
+Address.deteal='tecent'
+addr.deteal='alibab'
+print(id(addr.deteal),addr.deteal)
+print(id(Address.deteal),Address.deteal)
+
+class User:
+    def __init__(self):
+        self.__name=None
+        self.__age=None
+    @property
+    def name(self):
+        return self.__name
+    @name.setter
+    def name(self,name):
+        if len(name) <=3:
+            raise ValueError('name string too short')
+        self.__name=name
+    # name = property(fget=getname,fset=setname)
+        # name=property
+u=User()
+print(u.name)
+u.name='adfg'
+print(u.name)
+# print(u.__age)
+print(u._User__age)
