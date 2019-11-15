@@ -1,6 +1,3 @@
-
-print("hello zdx")
-
-print("ooooo")
-
-print("ok")
+#这是个主程序调用
+#let's begin
+print("hello world")
