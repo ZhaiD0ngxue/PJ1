@@ -1,5 +1,3 @@
-#这是个主程序调用
-#let's begin
+#study
 print("hello world")
-print("everything ok")
 
