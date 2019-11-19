@@ -1,3 +1,5 @@
+def info(name,age):
+    print("name",name)
+    print("age",age)
 
-r = sum([i for i in range(10)])
-print(r)
+info(name="hahah",age="15")
