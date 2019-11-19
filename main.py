@@ -1,10 +1,3 @@
-#study
-print("hello world")
-age = int(input("please input your age:"))
-if age >=25:
-    print("chengnianle")
-elif age <=18:
-    print("too old")
-else:
-    print("weichengnian")
 
+r = sum([i for i in range(10)])
+print(r)
